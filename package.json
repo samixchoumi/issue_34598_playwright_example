@@ -1,0 +1,26 @@
+{
+  "name": "issue_34598_example",
+  "version": "1.0.0",
+  "description": "Example project to reproduce Playwright issue 34598",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx bddgen --tags && npx playwright test",
+    "test-ui": "npx bddgen --tags 'not @smokeTest' && npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "samixchoumi",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.10",
+    "allure-playwright": "^3.0.9",
+    "dotenv": "^16.4.7",
+    "fs-extra": "^11.3.0",
+    "playwright-bdd": "^8.1.0",
+    "playwright-slack-report": "^1.1.89",
+    "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
